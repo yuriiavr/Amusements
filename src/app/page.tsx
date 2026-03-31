@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import * as LucideIcons from "lucide-react";
 import { ArrowUpRight, Plus, ChevronDown } from "lucide-react";
-import * as motion from "framer-motion/client";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { projectsData } from "@/data/projects";
 
