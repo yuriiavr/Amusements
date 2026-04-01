@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Inter, Geist_Mono } from "next/font/google"; // Або JetBrains_Mono
 import "./globals.css"
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="uk" className={`${eUkraine.variable} ${eUkraineHead.variable} dark`}>
       <body className={`${inter.className} bg-[#0a0a0a] antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
