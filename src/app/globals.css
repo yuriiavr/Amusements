@@ -4,4 +4,10 @@ body {
   background: radial-gradient(circle at top left, #111 0%, #0a0a0a 100%);
   color: #fff;
   min-height: 100vh;
+  font-family: var(--font-e-ukraine), sans-serif;
+}
+
+h1, h2, h3, .display-font {
+  font-family: var(--font-e-ukraine-head), sans-serif;
+  font-weight: 700;
 }

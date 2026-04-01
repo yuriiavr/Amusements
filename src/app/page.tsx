@@ -211,7 +211,7 @@ export default function Portfolio() {
               Support <br /> the craft.
             </h2>
             <a
-              href="https://t.me/yurii_av"
+              href="https://yurii-avramets.diaka.ua/amusements"
               target="_blank"
               rel="noopener noreferrer"
               className="group font-ukraine flex items-center gap-4 text-xl md:text-4xl font-light hover:text-indigo-600 transition-colors "

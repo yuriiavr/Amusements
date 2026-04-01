@@ -196,7 +196,7 @@ export default function ProjectPage({
                 Let's make <br /> it happen.
               </h2>
               <a
-                href="https://t.me/yurii_av"
+                href="https://yurii-avramets.diaka.ua/amusements"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group font-ukraine font-medium flex items-center gap-4 text-xl md:text-3xl font-light"

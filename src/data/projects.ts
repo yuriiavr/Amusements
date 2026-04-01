@@ -40,6 +40,7 @@ export const projectsData = {
     titleGradient: "from-purple-400 to-indigo-300",
     category: "amusement",
     year: "2026",
+    videoUrl: "/videos/alias-demo.mp4",
     demoUrl: "https://alias-umber.vercel.app"
   },
   "whisper-of-fate": {
