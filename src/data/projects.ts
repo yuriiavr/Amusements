@@ -20,7 +20,7 @@ export const projectsData = {
         "Робота в будь-якому редакторі чи месенджері"
     ],
     stack: ["Electron", "JS", "Gemini API"],
-    status: "Active Development",
+    status: "Completed",
     titleGradient: "from-purple-400 to-indigo-300",
     category: "useful",
     videoUrl: "/videos/aifixer-demo.mp4",
