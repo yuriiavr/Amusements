@@ -27,6 +27,7 @@ export default function ProjectPage({
 
   const isTarot = resolvedParams.slug === "whisper-of-fate";
   const isAlias = resolvedParams.slug === "alias-ai";
+  const isThreads = resolvedParams.slug === "top-threads";
 
   return (
     <main className="min-h-screen bg-[#050505] text-white selection:bg-indigo-500 overflow-x-hidden">
@@ -71,6 +72,12 @@ export default function ProjectPage({
                   <h1 className="text-[clamp(2.5rem,9vw,8rem)] font-extrabold leading-tight tracking-tighter uppercase italic pr-6 w-fit bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-white to-amber-400">
                     {project.title}
                   </h1>
+                ) : isThreads ? ( 
+                  <h1 className="text-[clamp(3rem,10vw,9rem)] font-black leading-[0.85] tracking-tighter uppercase mb-4 pr-6 w-fit">
+                    <span className="text-white">Top</span>
+                    <span className="text-zinc-500">.</span>
+                    <span className="text-sky-400">Threads</span>
+                  </h1>
                 ) : (
                   <h1
                     className={`text-[clamp(3rem,10vw,9rem)] font-black leading-[0.85] tracking-tighter uppercase italic mb-4 pr-6 w-fit bg-gradient-to-r bg-clip-text text-transparent ${project.titleGradient}`}
@@ -105,7 +112,7 @@ export default function ProjectPage({
                 muted
                 playsInline
                 controls={false}
-                disablePictureInPicture 
+                disablePictureInPicture
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-1000"
               >
                 <source src={project.videoUrl} type="video/mp4" />

@@ -26,6 +26,7 @@ export default function Portfolio() {
   const renderAmusementRow = (project: (typeof projects)[0], idx: number) => {
     const isTarot = project.slug === "whisper-of-fate";
     const isAlias = project.slug === "alias-ai";
+    const isThreads = project.slug === "top-threads";
     const defaultTitleStyles = `font-bold text-4xl sm:text-6xl md:text-8xl transition-all duration-700 bg-gradient-to-r bg-clip-text text-transparent ${project.titleGradient}`;
 
     return (
@@ -51,6 +52,19 @@ export default function Portfolio() {
             ) : isTarot ? (
               <h3 className="text-4xl sm:text-6xl md:text-9xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-white to-amber-400 leading-tight group-hover:scale-[1.02] transition-transform duration-500 origin-left pr-6">
                 {project.title}
+              </h3>
+            ) : isThreads ? (
+              <h3 className="leading-none group-hover:scale-[1.02] transition-transform duration-500 origin-left pr-6 uppercase">
+                <span className="text-4xl sm:text-6xl md:text-9xl font-black tracking-tighter text-white">
+                  Top
+                </span>
+                <span className="text-4xl sm:text-6xl md:text-9xl font-black tracking-tighter text-zinc-500">
+                  
+                </span>
+                <br />
+                <span className="text-4xl sm:text-6xl md:text-9xl font-black tracking-tighter text-sky-400">
+                  Threads
+                </span>
               </h3>
             ) : (
               <h3
@@ -141,7 +155,7 @@ export default function Portfolio() {
 
           <div className="relative">
             {/* MOBILE TITLE */}
-            <h1 className="md:hidden text-5xl sm:text-5xl font-black leading-[0.8] tracking-tighter mb-8 uppercase italic py-4 break-words">
+            <h1 className="md:hidden text-[44px] sm:text-5xl font-black leading-[0.8] tracking-tighter mb-8 uppercase italic py-4 break-words">
               <span className="block text-white">Code</span>
               <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/20 block">
                 Amusements
